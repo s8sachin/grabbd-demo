@@ -1,5 +1,3 @@
-import axios from 'axios';
-import MockAdapter from 'axios-mock-adapter';
 import { configure } from 'enzyme';
 import configureStore from 'redux-mock-store';
 import ReduxThunk from 'redux-thunk';

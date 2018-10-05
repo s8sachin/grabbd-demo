@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row } from 'reactstrap';
 
-const alt = 'http://d6ejh6ps4xec6.cloudfront.net/780X780/venue/Goav1E9i5vpHaMKpkatyfxBlXDSDMt7gcUFjVLYhfFhisaL3HWrZiQogaysO5a9RUIsdKqPt2tVMoxZtA8oTkZHUImesMbeVcYipm7ykWVgoOfeIwSm7XVuS5u9LIaoS.jpg';
 const tryIcon = 'http://grabbd.com/img/tryFilledWhite@3x.png';
 const likeIcon = 'http://grabbd.com/img/likeFilledWhite@3x.png';
 const dislikeIcon = 'http://grabbd.com/img/dislikeFilledWhite@3x.png';

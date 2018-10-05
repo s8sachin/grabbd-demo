@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Container, Row, Col } from 'reactstrap';
 import BodyContainer from './BodyContainer';
 import './Home.scss';
 import Header from '../Header/Header';
@@ -20,7 +19,7 @@ class Home extends Component {
     window.addEventListener('scroll', e => this.fireOnScroll(e), true);
   }
 
-  fireOnScroll(e) {
+  fireOnScroll() {
     let scrollVal = window.pageYOffset || document.documentElement.scrollTop;
     const scrollable = 140 - scrollVal;
     scrollVal = (scrollable < 64) ? 64 : ((scrollable > 140) ? 14.0 : scrollable);
