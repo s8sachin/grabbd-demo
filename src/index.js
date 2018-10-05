@@ -12,7 +12,6 @@ import { Provider } from 'react-redux';
 import ReduxThunk from 'redux-thunk';
 import { Route, BrowserRouter } from 'react-router-dom';
 import { createStore, applyMiddleware, compose } from 'redux';
-import browserHistory from './utils/history';
 import reducers from './reducers';
 import App from './components/App';
 // import registerServiceWorker from './registerServiceWorker';
@@ -24,7 +23,7 @@ const store = createStore(reducers, {}, composeEnhancers(applyMiddleware(ReduxTh
 const rootElement = document.getElementById('root');
 const app = (
   <Provider store={store}>
-    <BrowserRouter history={browserHistory} basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Route component={App} />
     </BrowserRouter>
   </Provider>
