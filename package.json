@@ -2,7 +2,7 @@
   "name": "grabbd",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://s8sachin.github.io/grabbd-demo/",
+  "homepage": "https://s8sachin.github.io/grabbd-demo",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "axios": "^0.18.0",
