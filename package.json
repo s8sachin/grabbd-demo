@@ -2,6 +2,7 @@
   "name": "grabbd",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://s8sachin.github.io/grabbd-demo",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "axios": "^0.18.0",
@@ -34,6 +35,7 @@
     "extract-text-webpack-plugin": "3.0.2",
     "file-loader": "1.1.5",
     "fs-extra": "3.0.1",
+    "gh-pages": "^2.0.1",
     "history": "^4.7.2",
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
@@ -68,6 +70,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
     "test": "node scripts/testScript.js --env=jsdom",
     "test-coverage": "npm test -- --coverage --no-cache --u",
     "eslint": "./node_modules/.bin/eslint .",
