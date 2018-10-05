@@ -1,0 +1,174 @@
+$white: #FFFFFF;
+$darkGrey: #332F3A;
+$orange: #F5A623;
+
+@mixin margin-left-right-auto() {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.full-background {
+  background-color: $darkGrey;
+  height: 100vh;
+  min-height: 900px;
+}
+
+.fontSize12{
+  font-size: 12px !important;
+}
+
+.fontSize11{
+  font-size: 12px !important;
+}
+
+.product-tagline-container {
+  padding-top: 2%;
+  max-width: 40%;
+  margin-left: 8%;
+}
+
+.product-tagline {
+  color: $white;
+  font-size: 64px;
+  font-weight: 300;
+  letter-spacing: 0.71px;
+  line-height: 80px;
+}
+
+.product-logo {
+  margin-top: 69px;
+}
+
+.login-form-container {
+  border: 1px solid $white;
+  background-color: $white;
+  color: $darkGrey;
+  float: right;
+  height: 415px;
+  width: 393px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  margin-top: 228px;
+  margin-right: 50px;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 55px;
+  > div {
+    height: 280px;
+  }
+}
+
+.login-heading {
+  color: $darkGrey;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.27px;
+  line-height: 31px;
+  max-width: 85%;
+}
+
+.dots-holder{
+  position: relative;
+  top: 12%;
+  @include margin-left-right-auto();
+  width: 25px;
+  display: flex;
+}
+
+.submit-button {
+  border-radius: 25px;
+  min-width: 104px;
+  border-color: $orange;
+  margin-top: 30px;
+  color: $white;
+  background: $orange;
+  font-size: 18px;
+}
+
+.submit-button:hover,
+.submit-button:focus,
+.submit-button:active {
+  background-color: $orange !important;
+  outline: 0 !important;
+  color: $white !important;
+  border: none !important;
+}
+
+.form-input {
+  width: 100%;
+  padding: 13px;
+  height: auto;
+  @extend .fontSize12;
+}
+
+.forgotpassword{
+  color: $orange;
+  @extend .fontSize12;
+  line-height: 17px;
+  text-align: right;
+  text-decoration: underline;
+}
+
+.form-label {
+  margin-top: 30px;
+  @extend .fontSize11;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .login-form-container{
+    width: 270px;
+    @include margin-left-right-auto();
+    float: inherit;
+    margin-top: 26px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 45px;
+    height: 385px;
+  }
+
+  .product-logo {
+    height: 60px;
+  }
+}
+@media (min-width: 426px) and (max-width: 767px) {
+  .login-form-container{
+    width: 400px;
+    @include margin-left-right-auto();
+    float: inherit;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 65px;
+    margin-top: 30px;
+    height: 405px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .product-tagline {
+    line-height: initial;
+    font-size: 36px;
+    @include margin-left-right-auto();
+  }
+
+  .product-tagline-container {
+    max-width: initial;
+    padding-top: 110px;
+  }
+  .login-form-container {
+    > div {
+      height: 255px;
+    }
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .full-background {
+    min-height: 900px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .product-tagline {
+    line-height: initial;
+    font-size: 41px;
+  }
+}
