@@ -1,25 +1,31 @@
 import React, { Component } from 'react';
 import { Row, Col, Container } from 'reactstrap';
-import './Footer.css';
-import colorProfiles from '../../icons/ColorProfiles.svg';
+import './Footer.scss';
+import grabbdLogo from '../../icons/grabbd.png';
 
 class Footer extends Component {
   render() {
     return (
-      <Container fluid className="custom-footer">
+      <Container fluid className="app-footer">
         <Row>
-          <Col xs={0} sm={4} md={4} lg={4}>
-            <div className="hide-xs">
-              <a href="/" className="para-custom">Overview</a>
-              <i className="fa fa-angle-right next-custom" />
-            </div>
+          <Col xs={12} sm={4} md={4} lg={4}>
+            <center>
+              <a href="http://grabbd.com"><img src={grabbdLogo} alt="abc" className="footer-logo" /></a>
+            </center>
           </Col>
-          <Col xs={6} sm={4} md={4} lg={4}>
-            <img src={colorProfiles} alt="logo" className="color-picker" />
+          <Col xs={12} sm={4} md={4} lg={4} className="d-flex align-items-center justify-content-center">
+            <a className="social_links" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/grabbdapp">
+              <i className="fab fa-facebook-f" />
+            </a>
+            <a className="social_links" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/grabbdapp/">
+              <i className="fab fa-instagram" />
+            </a>
+            <a className="social_links mr-0" target="_blank" rel="noopener noreferrer" href="https://twitter.com/grabbdapp">
+              <i className="fab fa-twitter" />
+            </a>
           </Col>
-          <Col xs={6} sm={4} md={4} lg={4} className="pull-right text-right">
-            <span className="hide-sm footer-copyrights"> &copy; 2018-19 All Rights Reserved,Entaly Inc</span>
-            <span className="hide-md-up footer-copyrights"> &copy; </span>
+          <Col xs={12} sm={4} md={4} lg={4} className="d-flex align-items-center justify-content-center">
+            <span className="">Demo Developed by <a href="https://github.com/s8sachin">Sachin</a></span>
           </Col>
         </Row>
       </Container>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  Navbar, Nav, NavItem, NavbarBrand, Button, Col, Row,
+  Navbar, Button, Col, Row,
 } from 'reactstrap';
 import { connect } from 'react-redux';
 import './Header.scss';
