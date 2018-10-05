@@ -24,7 +24,7 @@ const store = createStore(reducers, {}, composeEnhancers(applyMiddleware(ReduxTh
 const rootElement = document.getElementById('root');
 const app = (
   <Provider store={store}>
-    <Router history={browserHistory}>
+    <Router history={browserHistory} basename={process.env.PUBLIC_URL}>
       <Route component={App} />
     </Router>
   </Provider>
